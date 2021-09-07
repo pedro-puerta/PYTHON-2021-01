@@ -1,0 +1,62 @@
+Exercício 1
+Crie as tabelas abaixo no banco de dados e faça o mapeamento
+dessas tabelas utilizando o SQLAlchemy.
+
+Paciente:
+- id (inteiro, chave primária, auto incremental)
+- nome (string)
+- cpf (string)
+- idade (int)
+
+Medico:
+- id (inteiro, chave primária, auto incremental)
+- nome (string)
+- crm (string)
+- especializacao (string)
+
+Exame:
+- id (inteiro, chave primária, auto incremental)
+- id_medico (inteiro)
+- id_paciente (inteiro)
+- descricao (string)
+- resultado (string)
+
+Implementar um programa principal para realizar as seguintes
+operações:
+  - Cadastrar um médico.
+  - Cadastrar dois pacientes.
+  - Cadastrar dois exames (um para cada paciente).
+  - Inserir os dados cadastrados banco de dados.
+  - Realizar uma consulta no banco de dados para verificar se
+os dados foram inseridos corretamente.
+___________________________________________________
+Exercício 2
+Crie a tabelas abaixo no banco de dados e faça o mapeamento
+dessa tabela utilizando o SQLAlchemy.
+
+Funcionario:
+- id (inteiro, chave primária, auto incremental)
+- nome (string)
+- idade (int)
+- salario (float)
+
+Considere um arquivo de texto contendo os dados dos funcionários
+de uma empresa. Cada linha do arquivo contém as informações
+sobre um funcionário, no seguinte formato: nome;idade;salario
+
+Implementar um programa principal para realizar as seguintes operações:
+  - Ler o conteúdo do arquivo.
+  - Criar uma lista de objetos com os dados dos funcionários
+contidos no arquivo.
+  - Inserir a lista de objetos em um tabela no banco de dados.
+  - Realizar uma consulta no banco de dados para verificar se os
+dados foram inseridos corretamente.
+___________________________________________________
+Exercício 3
+Faça um programa que copie os dados da tabela de funcionários
+(inseridos no exercício anterior) e salve esses dados em um novo
+arquivo de texto.
+
+Nesse novo arquivo, a listagem dos funcionarios deve ser feita em
+ordem alfabética, e com os caracteres em maiúsculo.
+
